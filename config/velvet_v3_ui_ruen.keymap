@@ -144,10 +144,10 @@
 
         nav {
             bindings = <
-&trans    &kp N1        &kp N2        &kp N3            &kp N4     &kp N5                      &kp N6      &kp N7        &kp N8         &kp N9       &kp N0         &trans
-&kp CLCK  &kp RU_DQT    &kp RU_COLON  &kp RU_SEMICOLON  &kp EQUAL  &kp PLUS                    &kp RETURN  &kp LEFT      &kp UP         &kp DOWN     &kp RIGHT      &trans
-&trans    &kp RU_COMMA  &kp HOME      &kp INS           &kp END    &kp DEL                     &kp CLCK    &kp LC(LEFT)  &kp PAGE_DOWN  &kp PAGE_UP  &kp LC(RIGHT)  &kp RU_DOT
-                        &kp RU_DOT    &kp SLASH         &trans     &trans    &trans    &trans  &mo 5       &trans        &kp RU_COMMA   &trans
+&trans    &kp EQUAL     &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &to_en                      &to_ru      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RU_PLUS      &trans
+&kp CLCK  &kp RU_DQT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PLUS                    &kp RETURN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RU_MINUS     &trans
+&trans    &kp RU_COMMA  &kp HOME        &kp INS         &kp END          &kp DEL                     &kp CLCK    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RU_ASTERISK  &kp ENTER
+                        &kp RU_DOT      &kp SLASH       &trans           &trans    &trans    &trans  &mo 5       &trans        &kp NUMBER_0  &trans
             >;
 
             display-name = "Navigation";
