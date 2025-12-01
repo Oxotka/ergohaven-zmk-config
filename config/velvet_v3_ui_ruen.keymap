@@ -150,7 +150,7 @@
                         &kp RU_DOT      &kp SLASH       &trans           &trans    &trans    &trans  &mo 5       &trans        &kp NUMBER_0  &kp RU_FSLH
             >;
 
-            display-name = "Navigation";
+            display-name = "Nav";
         };
 
         sym_ru {
