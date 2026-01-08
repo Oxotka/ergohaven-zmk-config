@@ -75,19 +75,15 @@
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mt LC(LEFT_SHIFT) N1>;
+            bindings = <&kp F14>;
             label = "TO_RU";
-            wait-ms = <10>;
-            tap-ms = <30>;
         };
 
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mt LC(LEFT_SHIFT) NUMBER_2>;
+            bindings = <&kp F15>;
             label = "TO_EN";
-            wait-ms = <10>;
-            tap-ms = <30>;
         };
 
         layer_en: layer_en {
