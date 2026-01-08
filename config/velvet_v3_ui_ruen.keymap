@@ -125,6 +125,22 @@
             wait-ms = <0>;
             tap-ms = <30>;
         };
+
+        switch_to_en: switch_lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp N1>;
+            label = "SWITCH_LANG";
+            wait-ms = <10>;
+        };
+
+        switch_to_ru: switch_to_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp NUMBER_2>;
+            label = "SWITCH_TO_RU";
+            wait-ms = <10>;
+        };
     };
 
     keymap {
@@ -153,10 +169,10 @@
 
         nav {
             bindings = <
-&trans    &kp EQUAL     &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp BACKSPACE                    &to_ru      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RU_PLUS   &trans
-&kp CLCK  &kp RU_DQT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PLUS                         &kp RETURN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RU_STAR   &kp RU_FSLH
-&trans    &kp RU_COMMA  &kp HOME        &kp INS         &kp END          &kp DEL                          &to_en      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RU_MINUS  &kp RU_DOT
-                        &kp RU_DOT      &kp SLASH       &trans           &trans         &trans    &trans  &mo 5       &trans        &kp NUMBER_0  &kp SLASH
+&trans    &kp EQUAL     &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp BACKSPACE                    &switch_to_ru  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RU_PLUS   &trans
+&kp CLCK  &kp RU_DQT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PLUS                         &kp RETURN     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RU_STAR   &kp RU_FSLH
+&trans    &kp RU_COMMA  &kp HOME        &kp INS         &kp END          &kp DEL                          &switch_to_en  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RU_MINUS  &kp RU_DOT
+                        &kp RU_DOT      &kp SLASH       &trans           &trans         &trans    &trans  &mo 5          &trans        &kp NUMBER_0  &kp SLASH
             >;
 
             display-name = "Nav";
