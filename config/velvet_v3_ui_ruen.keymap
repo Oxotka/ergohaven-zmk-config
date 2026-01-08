@@ -131,7 +131,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp N1>;
             label = "SWITCH_LANG";
-            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         switch_to_ru: switch_to_ru {
@@ -139,7 +139,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp NUMBER_2>;
             label = "SWITCH_TO_RU";
-            wait-ms = <10>;
+            tap-ms = <10>;
         };
     };
 
