@@ -125,10 +125,10 @@
 
         en {
             bindings = <
-&kp ESC    &kp Q  &kp W     &kp E             &kp R         &kp T                        &kp Y  &kp U  &kp I             &kp O              &kp P      &kp BSPC
-&kp TAB    &kp A  &kp S     &kp D             &kp F         &kp G                        &kp H  &kp J  &kp K             &kp L              &kp SEMI   &kp BSLH
-&kp LSHFT  &kp Z  &kp X     &kp C             &kp V         &kp B                        &kp N  &kp M  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UNDER  &kp DOT
-                  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &mo 2  &kp SPACE    &kp RET  &mo 4  &none  &kp COMMA         &kp SLASH
+&kp ESC    &kp Q  &kp W     &kp E             &kp R         &kp T                        &kp Y  &kp U  &kp I      &kp O              &kp P      &kp BSPC
+&kp TAB    &kp A  &kp S     &kp D             &kp F         &kp G                        &kp H  &kp J  &kp K      &kp L              &kp SEMI   &kp LEFT_BRACKET
+&kp LSHFT  &kp Z  &kp X     &kp C             &kp V         &kp B                        &kp N  &kp M  &kp COMMA  &kp DOT            &kp UNDER  &kp DOT
+                  &kp LALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &mo 2  &kp SPACE    &kp RET  &mo 4  &none  &kp COMMA  &kp RIGHT_BRACKET
             >;
 
             display-name = "EN";
@@ -149,7 +149,7 @@
 &trans    &kp EQUAL   &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &kp BACKSPACE                    &to_en      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RU_PLUS   &trans
 &kp CLCK  &kp RU_DQT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PLUS                         &kp RETURN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RU_STAR   &kp RU_FSLH
 &trans    &kp LG(X)   &kp HOME        &kp INS         &kp END          &kp DEL                          &to_ru      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RU_MINUS  &kp RU_DOT
-                      &kp LG(C)       &kp LG(V)       &trans           &trans         &trans    &trans  &mo 5       &trans        &kp NUMBER_0  &kp SLASH
+                      &kp LC(F)       &kp F3          &trans           &trans         &trans    &trans  &mo 5       &trans        &kp NUMBER_0  &kp SLASH
             >;
 
             display-name = "Nav";
@@ -161,7 +161,7 @@
 &kp RU_CYRILLIC_IO  &en HASH   &en LT            &kp EQUAL  &en GT             &kp RU_COLON                    &en DOLLAR            &en AT_SIGN  &kp RU_UNDERSCORE  &en GRAVE         &en AMPS           &trans
 &kp RU_NUMERO       &en HASH   &kp LPAR          &kp MINUS  &kp RPAR           &kp PLUS                        &kp RU_PERCENT        &en LBRC     &en CARET          &en RBRC          &kp RU_EXCL        &kp RU_QUESTION
 &trans              &kp LG(X)  &en LEFT_BRACKET  &en PIPE   &en RIGHT_BRACKET  &kp RU_SEMI                     &kp RU_DOUBLE_QUOTES  &kp RU_FSLH  &en TILDE          &kp RU_BACKSLASH  &kp RU_UNDERSCORE  &kp RU_DOT
-                               &kp LG(C)         &kp LG(V)  &trans             &mo 5         &trans    &trans  &trans                &trans       &kp RU_COMMA       &kp RU_FSLH
+                               &kp LC(F)         &kp F3     &trans             &mo 5         &trans    &trans  &trans                &trans       &kp RU_COMMA       &kp RU_FSLH
             >;
         };
 
