@@ -44,7 +44,8 @@
             key-positions = <3 4>;
             layers = <1>;
             slow-release;
-            require-prior-idle-ms = <0>;
+            require-prior-idle-ms = <200>;
+            timeout-ms = <40>;
         };
 
         cmbru {
@@ -52,6 +53,8 @@
             key-positions = <3 4>;
             layers = <0>;
             slow-release;
+            require-prior-idle-ms = <200>;
+            timeout-ms = <40>;
         };
 
         screenshot {
